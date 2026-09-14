@@ -11,6 +11,7 @@ A responsive, static website with a forest-green, cream and lime visual identity
 - Mission, vision, objectives, six work areas, The Environmental Hour, community approach and partnership philosophy
 - Founder and Executive Director Rufus Divine Carneh Jr., office address, phone and email links
 - Official Facebook and YouTube links
+- Click-to-load embeds: the VGL YouTube uploads player (no-cookie domain) on the home page and The Environmental Hour page, and the VGL Facebook page feed on the home page. Neither is requested until the visitor loads it, so the default page makes no third-party requests. The YouTube player uses the channel's uploads playlist (channel UC... -> playlist UU...), so it stays current with no edits when new videos are posted.
 - Downloadable organization profile
 - Partner with us page: why partnership, the partnership equation, all thirteen stakeholder categories, the six-step community model and partnership contacts
 - Gallery of nine VGL clean-up photographs with an accessible lightbox (keyboard arrows, Escape, focus return); thumbnails pre-cropped to 3:2 and lazy-loaded, full-size versions fetched only when a photograph is opened

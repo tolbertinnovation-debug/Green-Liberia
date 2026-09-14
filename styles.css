@@ -124,3 +124,17 @@ nav a[aria-current=page]{font-weight:700;border-bottom:2px solid var(--gold);pad
 .lb-btns{width:100%}
 .lb-btns button{flex:1;border-radius:6px}
 }
+
+/* ---- click-to-load third-party embeds ---------------------------------
+   Nothing is requested from YouTube or Facebook until the visitor asks,
+   so the default page stays tracker-free and light on mobile data.      */
+.embed{border:1px solid var(--line);border-radius:8px;overflow:hidden;background:#e9eedf}
+.embed-facade{padding:38px 34px;display:flex;flex-direction:column;align-items:flex-start}
+.embed-facade .eyebrow{margin-bottom:14px}
+.embed-facade h3{font-size:27px;margin:0 0 10px;letter-spacing:-.035em}
+.embed-facade p{color:var(--muted);font-size:14px;max-width:54ch;margin:0 0 22px}
+.embed-facade .button{margin-bottom:15px}
+.embed-facade .embed-direct{font-size:12px;font-weight:700;color:var(--green);border-bottom:1px solid #a2b58d;text-decoration:none}
+.embed.is-loaded{background:#04140f;border-color:#04140f}
+.embed iframe{display:block;width:100%;border:0}
+@media(max-width:760px){.embed-facade{padding:26px 22px}.embed-facade h3{font-size:23px}}
