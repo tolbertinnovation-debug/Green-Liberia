@@ -18,6 +18,7 @@ A responsive, static website with a forest-green, cream and lime visual identity
 - The Environmental Hour page: the program, its seven guest groups, its ten topics, recorded discussions and ways to take part. Broadcast days and times are not published anywhere in the source profile, so the page directs visitors to contact VGL rather than stating a schedule — fill in the `.schedule` block in environmental-hour.html once they are known.
 - Story, interest and partnership message preparation with clipboard copying and email-app handoff
 - Privacy information, reduced-motion support and keyboard focus styles
+- WCAG AA text contrast on every page, and Open Graph/Twitter card metadata on all five pages so shared links render a title, description and image
 
 Open index.html in a browser. No installation or build is required.
 
