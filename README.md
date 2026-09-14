@@ -13,6 +13,7 @@ A responsive, static website with a forest-green, cream and lime visual identity
 - Official Facebook and YouTube links
 - Downloadable organization profile
 - Partner with us page: why partnership, the partnership equation, all thirteen stakeholder categories, the six-step community model and partnership contacts
+- Who we are page: organization facts, what VGL believes, vision, mission and all ten environmental objectives shown in full
 - Story, interest and partnership message preparation with clipboard copying and email-app handoff
 - Privacy information, reduced-motion support and keyboard focus styles
 
@@ -20,6 +21,7 @@ Open index.html in a browser. No installation or build is required.
 
 ## Files
 - `index.html` — home page
+- `about.html` — Who we are
 - `partners.html` — Partner with us
 - `styles.css` — shared stylesheet for every page
 - `site.js` — shared behaviour (mobile menu, footer year, privacy dialog)

@@ -23,6 +23,7 @@ jobs:
         run: |
           mkdir -p _site
           cp index.html _site/index.html
+          cp about.html _site/about.html
           cp partners.html _site/partners.html
           cp styles.css _site/styles.css
           cp site.js _site/site.js
