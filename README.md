@@ -44,7 +44,7 @@ Add a new page by copying the header and footer from `partners.html`, linking `s
 The workflow is manual so publication can follow content review. Future edits require running it again.
 
 ## Content sources
-Organization-specific content comes from the user-uploaded "PROFILE Voices for a Green Liberia.docx". The current white-background logo is "file_00000000d0188243baf20b9f515b8f73.png". The hero photograph is a user-supplied VGL clean-up photograph, re-encoded to JPEG at two widths as "vgl-community-cleanup-1300.jpg" (321 KB) and "vgl-community-cleanup-800.jpg" (153 KB). All are included in the Pages deployment artifact.
+Organization-specific content comes from the user-uploaded "PROFILE Voices for a Green Liberia.docx". The current white-background logo is "file_00000000d0188243baf20b9f515b8f73.png". The hero photograph is a user-supplied VGL radio-studio photograph, re-encoded to JPEG at two widths as "vgl-studio-1300.jpg" (240 KB) and "vgl-studio-800.jpg" (120 KB). "vgl-community-cleanup-1300.jpg" is retained as the Open Graph share image. All are included in the Pages deployment artifact.
 
 Contact: Rufus Divine Carneh Jr., Founder & Executive Director. Technology Building, 10th Street Sinkor, Monrovia, Liberia. Phone: +231770378566 / +231886962999. Email: rufuscarneh@gmail.com.
 
