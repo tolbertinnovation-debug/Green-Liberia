@@ -25,7 +25,7 @@ Open index.html in a browser. No installation or build is required.
 The workflow is manual so publication can follow content review. Future edits require running it again.
 
 ## Content sources
-Organization-specific content comes from the user-uploaded "PROFILE Voices for a Green Liberia.docx". The original uploaded logo is "IMG-20260914-WA0012(1).jpg". Both are included in the Pages deployment artifact.
+Organization-specific content comes from the user-uploaded "PROFILE Voices for a Green Liberia.docx". The current white-background logo is "file_00000000d0188243baf20b9f515b8f73.png". Both are included in the Pages deployment artifact.
 
 Contact: Rufus Divine Carneh Jr., Founder & Executive Director. Technology Building, 10th Street Sinkor, Monrovia, Liberia. Phone: +231770378566 / +231886962999. Email: rufuscarneh@gmail.com.
 
