@@ -25,6 +25,7 @@ jobs:
           cp index.html _site/index.html
           cp about.html _site/about.html
           cp partners.html _site/partners.html
+          cp environmental-hour.html _site/environmental-hour.html
           cp styles.css _site/styles.css
           cp site.js _site/site.js
           cp "file_00000000d0188243baf20b9f515b8f73.png" _site/
