@@ -6,8 +6,12 @@ A responsive, static website with a forest-green, cream and lime visual identity
 - Responsive navigation and mobile menu
 - Environmental topic filters
 - Three introductory reading guides in accessible native dialogs
-- Organization introduction based on the visible name and slogan
-- Story, interest and partnership message preparation with clipboard copying
+- Original VGL logo in the header, organization section, footer, and favicon
+- Mission, vision, objectives, six work areas, The Environmental Hour, community approach and partnership philosophy
+- Founder and Executive Director Rufus Divine Carneh Jr., office address, phone and email links
+- Official Facebook and YouTube links
+- Downloadable organization profile
+- Story, interest and partnership message preparation with clipboard copying and email-app handoff
 - Privacy information, reduced-motion support and keyboard focus styles
 
 Open index.html in a browser. No installation or build is required.
@@ -20,15 +24,15 @@ Open index.html in a browser. No installation or build is required.
 
 The workflow is manual so publication can follow content review. Future edits require running it again.
 
-## Content awaiting completion
-The attached DOCX and original JPEG were not accessible through the available execution tools during creation. The visible image established the name and slogan, but its binary file could not be copied. The header therefore uses a temporary leaf mark and text, not the original logo.
+## Content sources
+Organization-specific content comes from the user-uploaded "PROFILE Voices for a Green Liberia.docx". The original uploaded logo is "IMG-20260914-WA0012(1).jpg". Both are included in the Pages deployment artifact.
 
-Replace the temporary mark with the supplied original logo once the file is accessible. Review the attached organization profile and add verified mission, programs, leadership, contact channels, and organization-specific imagery. Current introductory copy is draft editorial language inferred from the visible branding, not a transcription of the profile. No team names, accomplishments, dates, partner endorsements, or contact details have been invented.
+Contact: Rufus Divine Carneh Jr., Founder & Executive Director. Technology Building, 10th Street Sinkor, Monrovia, Liberia. Phone: +231770378566 / +231886962999. Email: rufuscarneh@gmail.com.
 
-Images are illustrative Unsplash photography, not VGL program photographs. Google Fonts and Unsplash require internet access.
+General environmental guides are supplementary editorial content. Photographs are illustrative Unsplash imagery, not VGL activity photographs. Google Fonts and Unsplash require internet access. No broadcast times, partner endorsements, or impact statistics have been invented.
 
 ## Form behavior
-The introduction form only prepares a local message. It sends nothing, saves nothing to a server, and claims no successful submission. Once official contact details are confirmed, connect an authorized contact channel or backend. No donation processor is configured.
+The introduction form prepares a message locally, lets the visitor copy it, or opens the visitor's email app addressed to the profile's contact email. Visitors review and send through their own email provider. The site does not send or store messages and has no payment processor.
 
 ## Verification
 JavaScript parsed successfully and every internal navigation anchor was checked. Responsive breakpoints and reduced-motion rules are included. A browser rendering check was not available in the creation session.
