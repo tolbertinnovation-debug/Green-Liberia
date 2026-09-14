@@ -23,6 +23,9 @@ jobs:
         run: |
           mkdir -p _site
           cp index.html _site/index.html
+          cp partners.html _site/partners.html
+          cp styles.css _site/styles.css
+          cp site.js _site/site.js
           cp "file_00000000d0188243baf20b9f515b8f73.png" _site/
           cp "PROFILE Voices for a Green Liberia.docx" _site/
           cp vgl-community-cleanup-1300.jpg _site/

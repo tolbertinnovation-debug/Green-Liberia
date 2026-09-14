@@ -12,10 +12,20 @@ A responsive, static website with a forest-green, cream and lime visual identity
 - Founder and Executive Director Rufus Divine Carneh Jr., office address, phone and email links
 - Official Facebook and YouTube links
 - Downloadable organization profile
+- Partner with us page: why partnership, the partnership equation, all thirteen stakeholder categories, the six-step community model and partnership contacts
 - Story, interest and partnership message preparation with clipboard copying and email-app handoff
 - Privacy information, reduced-motion support and keyboard focus styles
 
 Open index.html in a browser. No installation or build is required.
+
+## Files
+- `index.html` — home page
+- `partners.html` — Partner with us
+- `styles.css` — shared stylesheet for every page
+- `site.js` — shared behaviour (mobile menu, footer year, privacy dialog)
+
+Page-specific JavaScript (the topic filters, reading guides and message drafting) stays inline in `index.html`.
+Add a new page by copying the header and footer from `partners.html`, linking `styles.css` and `site.js`, and adding a `cp` line to `.github/workflows/pages.yml`.
 
 ## Publish with GitHub Pages
 1. Open this repository's Settings > Pages.
