@@ -13,6 +13,7 @@ A responsive, static website with a forest-green, cream and lime visual identity
 - Official Facebook and YouTube links
 - Downloadable organization profile
 - Partner with us page: why partnership, the partnership equation, all thirteen stakeholder categories, the six-step community model and partnership contacts
+- Gallery of nine VGL clean-up photographs with an accessible lightbox (keyboard arrows, Escape, focus return); thumbnails pre-cropped to 3:2 and lazy-loaded, full-size versions fetched only when a photograph is opened
 - Who we are page: organization facts, what VGL believes, vision, mission and all ten environmental objectives shown in full
 - The Environmental Hour page: the program, its seven guest groups, its ten topics, recorded discussions and ways to take part. Broadcast days and times are not published anywhere in the source profile, so the page directs visitors to contact VGL rather than stating a schedule — fill in the `.schedule` block in environmental-hour.html once they are known.
 - Story, interest and partnership message preparation with clipboard copying and email-app handoff
@@ -25,6 +26,7 @@ Open index.html in a browser. No installation or build is required.
 - `about.html` — Who we are
 - `partners.html` — Partner with us
 - `environmental-hour.html` — The Environmental Hour
+- `gallery.html` — Our work in pictures
 - `styles.css` — shared stylesheet for every page
 - `site.js` — shared behaviour (mobile menu, footer year, privacy dialog)
 
