@@ -29,6 +29,7 @@ jobs:
           cp gallery.html _site/gallery.html
           cp work.html _site/work.html
           cp newsroom.html _site/newsroom.html
+          cp contact.html _site/contact.html
           cp styles.css _site/styles.css
           cp site.js _site/site.js
           cp "file_00000000d0188243baf20b9f515b8f73.png" _site/

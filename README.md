@@ -33,6 +33,7 @@ Open index.html in a browser. No installation or build is required.
 - `gallery.html` — Our work in pictures
 - `work.html` — Our work (six core areas)
 - `newsroom.html` — Newsroom (published work to date)
+- `contact.html` — Contact (direct details + inline message form)
 - `styles.css` — shared stylesheet for every page
 - `site.js` — shared behaviour (mobile menu, footer year, privacy dialog)
 
@@ -55,6 +56,8 @@ Contact: Rufus Divine Carneh Jr., Founder & Executive Director. Technology Build
 General environmental guides are supplementary editorial content. The hero photograph and the Community guide-card photograph show actual VGL activities and are served from this repository. The Nature and Clean energy guide-card photographs are illustrative Unsplash imagery and do not document VGL activities. Google Fonts and the guide-card Unsplash images require internet access. No broadcast times, partner endorsements, or impact statistics have been invented.
 
 ## Form behavior
+The canonical message form is inline on contact.html; the home page keeps its dialog version reached from the "Get involved" options. Both build the same draft and hand it to the visitor's email app. The draft template is currently written out in both places — worth unifying if it changes.
+
 The introduction form prepares a message locally, lets the visitor copy it, or opens the visitor's email app addressed to the profile's contact email. Visitors review and send through their own email provider. The site does not send or store messages and has no payment processor.
 
 ## Verification

@@ -171,3 +171,12 @@ nav a[aria-current=page]{font-weight:700;border-bottom:2px solid var(--gold);pad
 .newsnote h3{font-size:25px;margin:0 0 10px;letter-spacing:-.035em}
 .newsnote p{color:var(--ink);font-size:15px;margin:0 0 18px;max-width:62ch}
 @media(max-width:760px){.newsnote{padding:22px}.newsnote h3{font-size:22px}}
+
+/* ---- inline message form (contact.html) ---- */
+.form-panel{background:#e9eedf;border-top:3px solid var(--gold);padding:36px 34px;max-width:680px}
+.form-panel h3{font-size:27px;margin:0 0 10px;letter-spacing:-.035em}
+.form-panel>p{color:var(--ink);font-size:14px;margin:0;max-width:56ch}
+.form-panel form .button{margin-top:22px}
+.form-panel #draft-result{margin-top:26px;border-top:1px solid #cdd6c1;padding-top:22px}
+.form-panel #draft-result .actions{margin-top:16px}
+@media(max-width:760px){.form-panel{padding:26px 22px}.form-panel h3{font-size:23px}}
