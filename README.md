@@ -17,6 +17,7 @@ A responsive, static website with a forest-green, cream and lime visual identity
 - Gallery of nine VGL clean-up photographs with an accessible lightbox (keyboard arrows, Escape, focus return); thumbnails pre-cropped to 3:2 and lazy-loaded, full-size versions fetched only when a photograph is opened
 - Who we are page: organization facts, what VGL believes, vision, mission and all ten environmental objectives shown in full
 - Our work page: the six core areas as a ledger with links into the relevant page for each, two illustrated halves (studio and street), and the six-step delivery model
+- Newsroom: VGL's published output presented by type — the broadcast discussion, two awareness campaigns, the dated clean-up record and the live YouTube player. It states plainly that written articles are not yet published, rather than filling the page with placeholders.
 - The Environmental Hour page: the program, its seven guest groups, its ten topics, recorded discussions and ways to take part. Broadcast days and times are not published anywhere in the source profile, so the page directs visitors to contact VGL rather than stating a schedule — fill in the `.schedule` block in environmental-hour.html once they are known.
 - Story, interest and partnership message preparation with clipboard copying and email-app handoff
 - Privacy information, reduced-motion support and keyboard focus styles
@@ -31,6 +32,7 @@ Open index.html in a browser. No installation or build is required.
 - `environmental-hour.html` — The Environmental Hour
 - `gallery.html` — Our work in pictures
 - `work.html` — Our work (six core areas)
+- `newsroom.html` — Newsroom (published work to date)
 - `styles.css` — shared stylesheet for every page
 - `site.js` — shared behaviour (mobile menu, footer year, privacy dialog)
 
