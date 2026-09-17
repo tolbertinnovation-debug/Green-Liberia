@@ -241,3 +241,15 @@ h1,h2,h3{break-after:avoid}
 .voice .form-hint{font-size:12px}
 #interest-dialog form .button{margin-top:20px}
 #interest-dialog #draft-result .button{margin-top:15px}
+
+/* ---- 404 ---- */
+.notfound{padding:74px 0 12px}
+.notfound .code{display:block;font-family:Manrope,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;font-size:clamp(64px,11vw,132px);font-weight:600;letter-spacing:-.05em;line-height:.9;color:#6f8a3a}
+.notfound h1{font-size:clamp(34px,4vw,54px);font-weight:600;margin:18px 0 20px}
+.notfound .lead{font-size:17px;color:var(--muted);max-width:56ch}
+.lost-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 55px;margin-top:8px}
+.lost-grid a{display:flex;gap:18px;align-items:baseline;padding:16px 0;border-top:1px solid var(--line);text-decoration:none}
+.lost-grid a:hover{color:#3c5a33}
+.lost-grid b{color:#596e3b;font-size:11px;font-weight:800;letter-spacing:.06em;flex-shrink:0;width:2ch;font-variant-numeric:tabular-nums}
+.lost-grid span{font-size:15px}
+@media(max-width:760px){.notfound{padding-top:44px}.lost-grid{grid-template-columns:1fr;gap:0}}

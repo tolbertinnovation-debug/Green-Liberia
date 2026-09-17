@@ -34,6 +34,7 @@ Open index.html in a browser. No installation or build is required.
 - `work.html` — Our work (six core areas)
 - `newsroom.html` — Newsroom (published work to date)
 - `contact.html` — Contact (direct details + inline message form)
+- `404.html` — served by GitHub Pages for any unmatched URL
 - `styles.css` — shared stylesheet for every page
 - `site.js` — shared behaviour (mobile menu, footer year, privacy dialog)
 
@@ -49,6 +50,10 @@ Add a new page by copying the header and footer from `partners.html`, linking `s
 The workflow is manual so publication can follow content review. Future edits require running it again.
 
 ## Design and performance notes
+- `404.html` uses root-relative paths (`/Green-Liberia/...`) for every link and asset, because GitHub
+  Pages serves it at the URL that was requested, at any depth — relative paths would resolve against
+  that depth and break. Tested served three directories deep. If the site ever moves to a custom domain
+  at the root, drop the `/Green-Liberia` prefix throughout that one file.
 - The 1254px master logo (`file_00000000d0188243baf20b9f515b8f73.png`, 2.1 MB) is kept in the repo as the
   source asset but is no longer served. Header and footer use `vgl-logo-192.jpg` (19 KB); the favicon uses
   `vgl-logo-96.png` (24 KB). Regenerate derivatives from the master if the logo changes.

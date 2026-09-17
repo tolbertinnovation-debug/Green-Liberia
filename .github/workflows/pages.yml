@@ -30,6 +30,7 @@ jobs:
           cp work.html _site/work.html
           cp newsroom.html _site/newsroom.html
           cp contact.html _site/contact.html
+          cp 404.html _site/404.html
           cp styles.css _site/styles.css
           cp site.js _site/site.js
           cp vgl-logo-192.jpg _site/
