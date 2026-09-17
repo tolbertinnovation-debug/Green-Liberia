@@ -48,6 +48,19 @@ Add a new page by copying the header and footer from `partners.html`, linking `s
 
 The workflow is manual so publication can follow content review. Future edits require running it again.
 
+## Design and performance notes
+- The 1254px master logo (`file_00000000d0188243baf20b9f515b8f73.png`, 2.1 MB) is kept in the repo as the
+  source asset but is no longer served. Header and footer use `vgl-logo-192.jpg` (19 KB); the favicon uses
+  `vgl-logo-96.png` (24 KB). Regenerate derivatives from the master if the logo changes.
+- Fonts load via `<link rel="preconnect">` + stylesheet in each `<head>`, not `@import` in the CSS, and both
+  families carry a full system fallback stack so the pre-swap render looks deliberate on a slow connection.
+- Home page weight went from 2,395 KB to 359 KB on a phone at 1x.
+- No inline `style` attributes: layout utilities live in `styles.css` (`.section.flush`, `.section-lead`,
+  `.cards-note`, `.after-grid`, `.actions.flush`, `.embed.spaced`).
+- Headings use `text-wrap: balance` and paragraphs `text-wrap: pretty`; numbered ledgers use
+  `font-variant-numeric: tabular-nums` so the figures align down the column.
+- A print stylesheet strips navigation, CTAs and embeds and expands link URLs.
+
 ## Content sources
 Organization-specific content comes from the user-uploaded "PROFILE Voices for a Green Liberia.docx". The current white-background logo is "file_00000000d0188243baf20b9f515b8f73.png". The hero photograph is a user-supplied VGL radio-studio photograph, re-encoded to JPEG at two widths as "vgl-studio-1300.jpg" (240 KB) and "vgl-studio-800.jpg" (120 KB). "vgl-community-cleanup-1300.jpg" is retained as the Open Graph share image. All are included in the Pages deployment artifact.
 
