@@ -66,7 +66,7 @@ Organization-specific content comes from the user-uploaded "PROFILE Voices for a
 
 Contact: Rufus Divine Carneh Jr., Founder & Executive Director. Technology Building, 10th Street Sinkor, Monrovia, Liberia. Phone: +231770378566 / +231886962999. Email: rufuscarneh@gmail.com.
 
-General environmental guides are supplementary editorial content. The hero photograph and the Community guide-card photograph show actual VGL activities and are served from this repository. The Nature and Clean energy guide-card photographs are illustrative Unsplash imagery and do not document VGL activities. Google Fonts and the guide-card Unsplash images require internet access. No broadcast times, partner endorsements, or impact statistics have been invented.
+General environmental guides are supplementary editorial content. The hero photograph and the Community guide-card photograph show actual VGL activities and are served from this repository. The Nature and Clean energy guide-card photographs are illustrative and do not document VGL activities; both are now served from this repository, so no image on the site is hot-linked. Google Fonts requires internet access. No broadcast times, partner endorsements, or impact statistics have been invented.
 
 ## Form behavior
 The canonical message form is inline on contact.html; the home page keeps its dialog version reached from the "Get involved" options. Both build the same draft and hand it to the visitor's email app. The draft template is currently written out in both places — worth unifying if it changes.

@@ -42,6 +42,10 @@ jobs:
           cp vgl-community-cleanup-1300.jpg _site/
           cp vgl-drainage-1000.jpg _site/
           cp vgl-drainage-600.jpg _site/
+          cp vgl-forest-740.jpg _site/
+          cp vgl-forest-600.jpg _site/
+          cp vgl-solar-1000.jpg _site/
+          cp vgl-solar-600.jpg _site/
           cp vgl-gallery-*.jpg _site/
       - name: Upload website
         uses: actions/upload-pages-artifact@v3
