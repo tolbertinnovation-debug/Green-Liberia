@@ -50,6 +50,14 @@ Add a new page by copying the header and footer from `partners.html`, linking `s
 The workflow is manual so publication can follow content review. Future edits require running it again.
 
 ## Design and performance notes
+- The home page routes rather than replicates. Sections that existed in full on a dedicated page
+  (the six work areas, the community model, the partnership philosophy, the YouTube player, the full
+  contact block) are compact teasers or `.routes` blocks linking onward. It was 9,849px tall; it is now
+  ~8,850px with nothing lost, since every trimmed section has its own page.
+- Section rhythm: `.band` gives a section its own full-bleed ground (`.section` is itself the `.wrap`, so a
+  background on it tints only the centre column). Mission/vision and the "Go deeper" interlude are tinted
+  bands, which cut the longest run of consecutive pale sections from four to two. `.band` headings are a
+  size smaller: those sections route rather than announce.
 - `404.html` uses root-relative paths (`/Green-Liberia/...`) for every link and asset, because GitHub
   Pages serves it at the URL that was requested, at any depth — relative paths would resolve against
   that depth and break. Tested served three directories deep. If the site ever moves to a custom domain

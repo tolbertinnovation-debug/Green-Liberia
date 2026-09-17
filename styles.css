@@ -8,7 +8,9 @@ dialog{width:min(610px,92vw);max-height:88vh;border:0;border-radius:10px;padding
 @media(max-width:760px){.hero{padding-top:42px}.hero-grid{grid-template-columns:1fr;gap:34px}.hero h1{font-size:57px}.hero p{font-size:15px}.underhero{margin-top:32px;flex-wrap:wrap;padding:23px 0;gap:8px 25px}.topics-band .wrap{display:grid;grid-template-columns:1fr 1fr;font-size:11px;gap:12px}.section{padding:62px 0}.section-head{display:block}.section-head p{margin-top:20px}.cards{grid-template-columns:1fr;gap:30px}.card-photo{height:270px}.about,.voice-grid{grid-template-columns:1fr;gap:35px}.about-art{min-height:380px}.quote{font-size:34px}.cta .wrap{display:block}.cta .button{margin-top:28px}.footer-top{flex-direction:column}.footer-links{gap:50px}.footer-bottom{flex-direction:column;gap:8px}.actions .button{padding:13px 17px;gap:17px}}
 @media(max-width:380px){.hero h1{font-size:48px}.brand{font-size:11px}.topics-band .wrap{grid-template-columns:1fr}.footer-links{gap:30px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
-.topbar .wrap{align-items:center;gap:8px 25px;flex-wrap:wrap}.social-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}.channel-card{padding:35px;border:1px solid var(--line);border-radius:8px;background:#fff;display:flex;flex-direction:column;align-items:flex-start}.channel-card h3{font-size:30px;margin:20px 0 12px}.channel-card p{color:var(--muted);font-size:15px;max-width:420px}.channel-icon{display:grid;place-items:center;width:54px;height:54px;border-radius:13px}.channel-icon svg{width:27px;height:27px}.channel-icon.facebook{background:#e8f0fd;color:#0866ff}.channel-icon.youtube{background:#ffeaea;color:#c90000}.channel-card .button{margin-top:auto}.social-foot{display:flex;gap:18px;margin-top:15px;flex-wrap:wrap}.social-foot a{display:inline-flex;align-items:center;gap:7px;min-height:44px;text-decoration:none;font-size:13px}.social-foot svg{width:19px;height:19px}.social-foot a:hover{text-decoration:underline}@media(max-width:760px){.social-grid{grid-template-columns:1fr}.channel-card{padding:27px}.topbar .wrap>span:first-child{font-size:9px}} 
+.topbar .wrap{align-items:center;gap:8px 25px;flex-wrap:wrap}.social-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.channel-card{padding:22px 26px;border:1px solid var(--line);border-radius:8px;background:#fff;display:grid;grid-template-columns:54px 1fr auto;gap:0 22px;align-items:center}.channel-text{min-width:0}.channel-text h3{margin:0 0 4px}.channel-text p{margin:0}.channel-card h3{font-size:21px;letter-spacing:-.03em}.channel-card p{color:var(--muted);font-size:14px;max-width:52ch}.channel-icon{display:grid;place-items:center;width:54px;height:54px;border-radius:13px}.channel-icon svg{width:27px;height:27px}.channel-icon.facebook{background:#e8f0fd;color:#0866ff}.channel-icon.youtube{background:#ffeaea;color:#c90000}.channel-card .button{margin:0;white-space:nowrap}.social-foot{display:flex;gap:18px;margin-top:15px;flex-wrap:wrap}.social-foot a{display:inline-flex;align-items:center;gap:7px;min-height:44px;text-decoration:none;font-size:13px}.social-foot svg{width:19px;height:19px}.social-foot a:hover{text-decoration:underline}@media(max-width:1200px){.social-grid{grid-template-columns:1fr}}
+@media(max-width:760px){.channel-card{grid-template-columns:44px 1fr}.channel-card .button{grid-column:2;margin-top:14px;white-space:normal}}
+@media(max-width:760px){.channel-card{gap:0 16px;padding:20px 22px}.channel-icon{width:44px;height:44px}.topbar .wrap>span:first-child{font-size:9px}} 
 .brand-logo{width:64px;height:64px;object-fit:contain;border-radius:8px;background:#fff;flex-shrink:0}.about-art.official-logo{padding:0;min-height:0;aspect-ratio:1;background:#fff}.about-art.official-logo img{position:static;opacity:1;width:100%;height:100%;object-fit:contain}.purpose-grid,.hour-grid,.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:35px}.purpose-grid article{background:#e9eedf;padding:35px;border-top:3px solid var(--gold)}.purpose-grid h3,.leader-card h3{font-size:30px}.purpose-grid p,.work-card p,.partnership p{color:var(--muted);font-size:15px}.work-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.work-card{padding:30px;border:1px solid var(--line);border-radius:6px}.work-card h3{font-size:25px}.work-card .eyebrow{color:#596e3b}.objectives{margin-top:30px;border-block:1px solid var(--line);padding:20px 0}.objectives summary{cursor:pointer;font-weight:700}.objectives li{padding:5px 0;color:var(--muted)}.environmental-hour{background:var(--green);color:white;padding:75px 0}.environmental-hour h2{font-size:clamp(40px,5vw,65px);font-weight:500}.environmental-hour h3{font-size:28px}.environmental-hour p{color:#d1ddca}.environmental-hour .eyebrow{color:var(--lime)}.topic-tags{display:flex;flex-wrap:wrap;gap:9px}.topic-tags span{font-size:12px;border:1px solid #62816c;border-radius:30px;padding:7px 13px}.approach-list{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;list-style-position:inside;padding:0;counter-reset:step}.approach-list li{padding:22px;background:#e9eedf;font-size:14px}.partnership{margin-top:45px;max-width:850px}.partnership h3{font-size:32px}.contact-grid{background:#e9eedf;padding:40px;border-radius:8px}.leader-card p{color:var(--muted)}.contact-details{display:grid;gap:22px}.contact-details b{display:block;font-size:12px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:8px}.contact-details a{display:block;overflow-wrap:anywhere}.contact-details address{font-style:normal}.navrow nav{gap:18px}
 @media(max-width:1000px){.work-grid{grid-template-columns:1fr 1fr}.navrow nav{gap:11px}.brand-logo{width:52px;height:52px}}
 @media(max-width:760px){.purpose-grid,.hour-grid,.contact-grid,.work-grid{grid-template-columns:1fr}.approach-list{grid-template-columns:1fr 1fr}.purpose-grid article,.work-card,.contact-grid{padding:25px}.brand-logo{width:49px;height:49px}.contact-grid{gap:30px}.environmental-hour{padding:60px 0}.brand{min-width:0}}
@@ -253,3 +255,52 @@ h1,h2,h3{break-after:avoid}
 .lost-grid b{color:#596e3b;font-size:11px;font-weight:800;letter-spacing:.06em;flex-shrink:0;width:2ch;font-variant-numeric:tabular-nums}
 .lost-grid span{font-size:15px}
 @media(max-width:760px){.notfound{padding-top:44px}.lost-grid{grid-template-columns:1fr;gap:0}}
+
+/* ---- routing band (was four decorative phrases; now the four main pages) ---- */
+.topics-band a{display:flex;align-items:baseline;gap:14px;text-decoration:none;color:inherit;padding:4px 0;border-bottom:1px solid transparent;transition:border-color .2s}
+.topics-band a:hover{border-bottom-color:var(--lime)}
+.topics-band a b{color:var(--lime);margin:0;font-variant-numeric:tabular-nums}
+.topics-band a span:last-child{white-space:nowrap}
+
+/* ---- compact routing block (replaces sections duplicated on other pages) ---- */
+.routes{display:grid;grid-template-columns:1fr 1fr;gap:0 55px;border-top:1px solid var(--line);margin-top:6px}
+.routes a{display:grid;grid-template-columns:2ch 1fr auto;gap:0 20px;align-items:baseline;padding:22px 0;border-bottom:1px solid var(--line);text-decoration:none}
+.routes a:hover{color:#3c5a33}
+.routes b{color:#596e3b;font-size:11px;font-weight:800;letter-spacing:.06em;font-variant-numeric:tabular-nums}
+.routes strong{font-family:Manrope,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;font-size:20px;font-weight:600;letter-spacing:-.03em}
+.routes em{font-style:normal;display:block;font-size:14px;color:var(--muted);margin-top:5px}
+.routes .go{font-size:15px;color:#596e3b}
+
+/* ---- condensed contact block ---- */
+.contact-brief{display:grid;grid-template-columns:1fr 1fr;gap:46px;background:#e9eedf;padding:40px;border-radius:8px;align-items:center}
+.contact-brief h3{font-size:30px;margin:0 0 12px;letter-spacing:-.035em}
+.contact-brief p{color:var(--muted);font-size:15px;margin:0 0 22px}
+.contact-brief dl{margin:0;display:grid;gap:16px}
+.contact-brief dt{font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:#596e3b;font-weight:800;margin-bottom:4px}
+.contact-brief dd{margin:0;font-size:15px}
+.contact-brief dd a{overflow-wrap:anywhere}
+
+@media(max-width:760px){
+.topics-band .wrap{grid-template-columns:1fr}
+.routes{grid-template-columns:1fr;gap:0}
+.routes a{grid-template-columns:2ch 1fr;padding:18px 0}
+.routes .go{display:none}
+.contact-brief{grid-template-columns:1fr;gap:28px;padding:26px}
+.contact-brief h3{font-size:25px}
+}
+
+/* ---- full-bleed band ---------------------------------------------------
+   .section is itself the .wrap, so a background on it tints only the
+   1260px column. An interlude needs its own ground edge to edge, plus a
+   smaller heading: these sections route, they do not announce, and ten
+   headings at the same size is what made the page read as wallpaper.   */
+.band{padding:100px 0}
+.band.tint{background:#e9eedf}
+.band .section-head h2{font-size:clamp(29px,3.1vw,42px)}
+@media(max-width:760px){.band{padding:62px 0}}
+
+/* mission + vision reads as a statement pause between "who we are" and
+   "what we do", so it gets its own ground; the cards lift to white to stay
+   distinct from it */
+.band.tint .purpose-grid{margin:0}
+.band.tint .purpose-grid article{background:#fff}
