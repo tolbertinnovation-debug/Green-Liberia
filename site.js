@@ -1,3 +1,29 @@
+(function(){
+if(!window.IntersectionObserver||matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+var sel='.section-head,.card,.work-card,.area,.feature,.next-card,.channel-card,.video-card,'+
+'.gallery-grid figure,.routes a,.stake-grid>div,.facts>div,.purpose-grid article,.approach-list li,'+
+'.ph-art,.ph-index,.purpose-pair>div,'+
+'.partnership,.newsnote,.contact-brief,.form-panel,.embed,.hero-image,.underhero,.equation-row,.areas,.lost-grid a';
+var els=[].slice.call(document.querySelectorAll(sel));
+// stagger siblings so a grid resolves as a run rather than all at once
+var groups={};
+els.forEach(function(el){
+  var k=el.parentNode&&el.parentNode!==document.body?(el.parentNode.className||'p')+el.parentNode.children.length:'x';
+  (groups[k]=groups[k]||[]).push(el);
+});
+Object.keys(groups).forEach(function(k){
+  groups[k].forEach(function(el,i){ if(groups[k].length>1&&i<6) el.style.setProperty('--d',(i*70)+'ms'); });
+});
+document.documentElement.dataset.rev='1';
+var io=new IntersectionObserver(function(entries){
+  entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('is-in'); io.unobserve(e.target); } });
+},{rootMargin:'0px 0px -8% 0px',threshold:0.01});
+els.forEach(function(el){ io.observe(el); });
+// anything already past the fold on load should never wait for a scroll
+requestAnimationFrame(function(){
+  els.forEach(function(el){ if(el.getBoundingClientRect().top<innerHeight){ el.classList.add('is-in'); io.unobserve(el);} });
+});
+})();
 document.querySelectorAll('[data-embed]').forEach(box=>{const btn=box.querySelector('button');if(!btn)return;btn.addEventListener('click',()=>{const f=document.createElement('iframe');f.src=box.dataset.embed;f.title=box.dataset.embedTitle||'Embedded media';f.loading='lazy';f.referrerPolicy='strict-origin-when-cross-origin';f.allow='encrypted-media; picture-in-picture; web-share; fullscreen';f.allowFullscreen=true;if(box.dataset.embedRatio)f.style.aspectRatio=box.dataset.embedRatio;if(box.dataset.embedHeight)f.style.height=box.dataset.embedHeight+'px';box.classList.add('is-loaded');box.replaceChildren(f);f.focus&&f.focus()})});
 const menu=document.querySelector('.menu'),nav=document.querySelector('nav');
 menu.addEventListener('click',()=>{const open=menu.getAttribute('aria-expanded')!=='true';menu.setAttribute('aria-expanded',String(open));nav.classList.toggle('open',open)});

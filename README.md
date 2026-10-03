@@ -73,9 +73,27 @@ The workflow is manual so publication can follow content review. Future edits re
 - Headings use `text-wrap: balance` and paragraphs `text-wrap: pretty`; numbered ledgers use
   `font-variant-numeric: tabular-nums` so the figures align down the column.
 - A print stylesheet strips navigation, CTAs and embeds and expands link URLs.
+- Motion: an inline `<head>` script sets a `.js` class before first paint, and `site.js` reveals elements
+  on scroll with an `IntersectionObserver` (siblings staggered, capped at 6 x 70ms). Three guards: the
+  hidden state lives inside `@media (prefers-reduced-motion: no-preference)`, the selector list is wrapped
+  in `:where()` so a selector ending in an element name cannot outrank `.js .is-in` and strand an element
+  at `opacity:0`, and the inline script removes `.js` after 2.5s unless `site.js` has reported in, so a
+  blocked or failed script shows the page rather than a blank one. Verified with JS on, with JS off, with
+  reduced motion, and with `site.js` aborted.
+- Inner-page heroes are one system with two fills. Pages whose body does not open with imagery
+  (`about`, `partners`, `environmental-hour`, `contact`) carry a photograph beside the copy (`.has-art`);
+  the long multi-section pages (`work`, `newsroom`) carry a numbered contents list instead (`.has-index`).
+  `gallery` keeps the plain variant, since its photo grid starts immediately below. All three share the
+  rule-marked eyebrow and type scale.
+- Header navigation rules are scoped to `.navrow>nav`, not the bare `nav` element. They were written bare,
+  and the mobile rule (`display:none;position:absolute`) therefore applied to every other `<nav>` on the
+  page: the home page's `.topics-band` routing band was invisible at every width below 1100px, i.e. on
+  every phone and tablet. Any new `<nav>` outside the header would have hit the same trap.
+- The six-step model (`.approach-list`) is drawn as one rule with a marker per step rather than six tinted
+  tiles, because the steps are a sequence, not a set of equals.
 
 ## Content sources
-Organization-specific content comes from the user-uploaded "PROFILE Voices for a Green Liberia.docx". The current white-background logo is "file_00000000d0188243baf20b9f515b8f73.png". The hero photograph is a user-supplied VGL radio-studio photograph, re-encoded to JPEG at two widths as "vgl-studio-1300.jpg" (240 KB) and "vgl-studio-800.jpg" (120 KB). "vgl-community-cleanup-1300.jpg" is retained as the Open Graph share image. All are included in the Pages deployment artifact.
+Organization-specific content comes from the user-uploaded "PROFILE Voices for a Green Liberia.docx". The current white-background logo is "file_00000000d0188243baf20b9f515b8f73.png". The hero photograph is a user-supplied VGL radio-studio photograph, re-encoded to JPEG at two widths as "vgl-studio-1300.jpg" (240 KB) and "vgl-studio-800.jpg" (120 KB). "vgl-community-cleanup-1300.jpg" is retained as the Open Graph share image. "vgl-roadside-1000.jpg" / "-600.jpg" are re-encodes of gallery photograph 06 for the Partner page hero. All are included in the Pages deployment artifact.
 
 Contact: Rufus Divine Carneh Jr., Founder & Executive Director. Technology Building, 10th Street Sinkor, Monrovia, Liberia. Phone: +231770378566 / +231886962999. Email: rufuscarneh@gmail.com.
 
@@ -87,4 +105,4 @@ The canonical message form is inline on contact.html; the home page keeps its di
 The introduction form prepares a message locally, lets the visitor copy it, or opens the visitor's email app addressed to the profile's contact email. Visitors review and send through their own email provider. The site does not send or store messages and has no payment processor.
 
 ## Verification
-JavaScript parsed successfully and every internal navigation anchor was checked. Responsive breakpoints and reduced-motion rules are included. A browser rendering check was not available in the creation session.
+Checked in headless Chromium on every page: no horizontal overflow at 19 widths from 1600px to 320px; zero WCAG AA contrast failures at 1440 / 900 / 390 measured against rendered colours; every revealed element ends visible with JS on, with JS off, with reduced motion, and with `site.js` aborted; the mobile menu, card filters, reading-guide and privacy dialogs, gallery lightbox (open, Escape, focus return), click-to-load embed facades (no third-party request before click) and the contact form's draft and mailto construction all behave. Every internal link and anchor resolves, and the deploy manifest and the repository agree in both directions.
